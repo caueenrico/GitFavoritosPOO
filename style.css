@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --ff-primary: "Roboto", sans-serif;
+}
+
+body {
+  background: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+body * {
+  font-family: var(--ff-primary);
+}
+
+#app {
+  width: 1120px;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 6.7rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+header div input {
+  width: 462px;
+  height: 48px;
+  border: none;
+  padding: 16px;
+
+  gap: 10px;
+
+  border-radius: 5px;
+  background: #06181c;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+
+  color: #7c7c8a;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1.2rem 3.2rem;
+  background: #065e7c;
+  border-radius: 5px;
+
+  border: none;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #0b749b;
+}
+
+.table-wrapper {
+  
+  border: 1px solid #4A808C;
+  border-radius: 12px;
+  padding: 0;
+  max-height: 500px;
+  overflow-y: scroll;
+  
+}
+
+/* Chrome, Edge and Safari */
+.table-wrapper::-webkit-scrollbar {
+  width: 12px;
+}
+
+.table-wrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  background-color: #4A808C;
+  border-radius: 20px;
+  border: 3px solid #e3ebec;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+
+}
+
+table * {
+  color: #e1e1e6;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+
+}
+
+thead th {
+  background-color: #065e7c;
+  text-align: left;
+  padding: 10px;
+  position: sticky;
+  
+  top: 0;
+}
+
+
+table tbody tr:first-child {
+  
+ 
+}
+
+/* todas as linhas impares ele vai colocar essa cor */
+table tr:nth-child(odd) {
+  background: transparent;
+}
+
+table tr {
+  background: #06181c;
+  border-bottom: 1px solid #4a808c;
+}
+
+table td {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+td.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+td.user img {
+  width: 5rem;
+  height: 5rem;
+
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+td.user a {
+  text-decoration: none;
+}
+
+td.user a p {
+  font-weight: bold;
+  color: #e1e1e6;
+}
+
+td.user a span {
+  font-weight: normal;
+  color: #a8a8b3;
+}
+
+td .remove {
+  background: none;
+  border: none;
+  padding: 0;
+  text-transform: none;
+
+  color: #f75a68;
+  cursor: pointer;
+}
+
